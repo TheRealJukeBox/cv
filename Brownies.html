@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">        <!-- Viewport is necessary for responsiveness -->
+    <meta name="keywords" content="Recipes, Brownies">                    <!-- Keywords of the html to include in search engines -->
+    <meta name="author" content="Ahmed">
+    <link rel="stylesheet" href="CSS/Recipes.css">
+    <title>Brownies</title>
+  </head>
+  <body>
+    <!-- Beginnig of header -->
+    <header id="headerID">
+      <div class="header">
+        <h1>Selected Recipes</h1>
+        <nav>
+            <ul class="HL">      <!-- Used this type of onClick to allow the button to go to the desired html page -->
+              <li><button class="NavButton" type="button" onclick="location.href='index.html'" name="HomeButton">Home</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='Brownies.html'" name="BrowniesButton">Brownies</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='KoreanChicken.html'" name="KoreanChickenButton">Korean Chicken</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='Manakeesh.html'" name="ManakeeshButton">Manakeesh</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='Feedback.html'" name="Feedback">Feedback</button></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End of header -->
+
+    <!-- Beginnig of Body -->
+    <div class="MainTitle" style="background-image:url(BrowniesF2.jpg)">
+      <h1 class="Title">Brownies</h1>
+    </div>
+    <div class="Intro">
+      <h1>Intro</h1>
+      <p>
+        Brownies do not require a lot of ingredients and time to bake, in fact, you would need less than an hour to bake a delicious portion.
+        The following recipe is the way how I personally like, feel free to modify it in any way. And if you do so, click on the feedback button and share with me your <em>newly modified</em> recipe.
+      </p>
+    </div>
+    <div class="Ingredients">
+      <h2>Ingredients</h2>
+      <ul class="IngredientsList">
+        <li>2 eggs</li>
+        <li>1 <abbr title="teaspoon">tsp</abbr> of vanilla extract</li>
+        <li>1/2 cup of brown sugar</li>
+        <li>50 <abbr title="grams">g</abbr> unsalted butter</li>
+        <li>200 <abbr title="grams">g</abbr> dark chocolate; preferably 60-80% cocoa</li>
+        <li>1/2 cup all-purpose flour</li>
+        <li>1 <abbr title="teaspoon">tsp</abbr> of baking powder</li>
+        <li>2 <abbr title="tablespoon">tbsp</abbr> cocoa powder.</li>
+      </ul>
+    </div>
+    <div class="Steps">
+      <h2>Steps:</h2>
+      <ol>
+        <li>Pre-heat the oven for 10 minutes at 180&#176;</li>
+        <li>Melt the butter and the chocolate in a water bath.</li>
+        <li>On a seperate bowl mix the eggs, vanilla extract and sugar very well.</li>
+        <li>Add the molten chocolate to the eggs mixture and mix them very well.</li>
+        <li>Mix the dry ingredients and pour them into the liquid mixture.</li>
+        <li>Add the mixture into a baking pan. Don't forget to add a baking sheet to prevent the brownies from sticking.
+        and bake for around 10 minutes. Time varies depending on the thickness of the brownies.</li>
+      </ol>
+    </div>
+    <div class="MainBody">
+      <div class="ShowStep1">
+        <div class="Step2">
+          <figure>
+            <img src="Images/Brownies2.jpg" alt="Step 2: Melting chocolate and butter">
+            <figcaption>Step 2</figcaption>
+          </figure>
+        </div>
+      <div class="Step3">
+        <figure>
+          <img src="Images/Brownies3.jpg" alt="Step 3: Mixing eggs, vanilla, and suar">
+          <figcaption>Step 3</figcaption>
+        </figure>
+      </div>
+      <div class="Step4">
+        <figure>
+          <img src="Images/Brownies4.jpg" alt="Step 4: Adding chocolate to egg mixture">
+          <figcaption>Step 4</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="ShowStep2">
+      <div class="Step5">
+        <figure>
+          <img src="Images/Brownies5.jpg" alt="Step 5: Mixing dry and liquid ingredients">
+          <figcaption>Step 5</figcaption>
+        </figure>
+      </div>
+      <div class="Step6">
+        <figure>
+          <img src="Images/Brownies6.jpg" alt="Step 6: Baking">
+          <figcaption>Step 6</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  <!-- End of Body -->
+
+  <!-- Beginnig of Footer -->
+  <footer>
+    <h6 id="Copyright">Copyright<sup>&#169;</sup> 2022. All rights reserved</h6>       <!-- The value between the supscript is for the c symbol of copyright -->
+    <button class ="footerButton" type="button" name="BackToTop" onclick="location.href='#headerID'">^</button>      <!-- Used this type of onClick to allow the button to go to the header -->
+  </footer>
+  <!-- End of Footer -->
+  </body>
+</html>

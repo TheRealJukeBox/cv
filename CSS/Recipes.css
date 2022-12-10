@@ -1,0 +1,215 @@
+/* Universal affects the whole thing */
+
+*{
+    margin-top: 0;
+    font-family: Garamond, Arial;
+}
+
+body, html {
+  background-color:	#F0F0F0;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 0 0 0;
+}
+
+/* Start of Headers */
+
+.header {
+  display: block;
+  background-color:#202020;
+  position: relative;
+  text-align: center;
+  top: 0;
+  color: white;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0 10px 0;
+}
+.header h1 {
+  position: relative;
+  top: 10px;
+  font-size: 45px;
+}
+
+.HL {
+  padding: 0;
+}
+
+.HL li {
+  position: relative;
+  text-align: center;
+  top: 5px;
+  display: inline;
+  margin: 20px;
+  color: white;
+  padding:0;
+}
+
+.NavButton, .footerButton {
+  font-size: 22.5px;
+  padding: 10px 5px 10px 5px;
+  border-radius: 4px;
+  background-color: #202020;
+  border: none;
+  margin-bottom: 4px;
+  color: white;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.NavButton:hover, .footerButton:hover {
+  padding: 9px;
+  background-color: white;
+  color: #202020;
+}
+
+/* End of Headers */
+
+/* Start of Body */
+
+.MainTitle {
+height: 500px;
+background-size: 100%;
+background-repeat:no-repeat;
+text-align: left;
+}
+
+.Title {
+position: relative;
+font-size: 80px;
+text-shadow:2px 0 10px grey;
+margin: 30px;
+top: 60%;
+animation: fadeIn 2s;
+-webkit-animation: fadeIn 2s;
+-o-animation: fadeIn 2s;
+-moz-animation: fadeIn 2s;
+-ms-animation: fadeIn 2s;
+color: white;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.Intro, .Ingredients, .Steps {
+  margin: 30px;
+  font-size: 22.5px;
+}
+
+.MainBody, figure {
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  height: 100%;
+  background-color: #202020;
+}
+
+.Step2, .Step3, .Step4, .Step5, .Step6 {
+  float: none;
+  display: inline-block;
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+/* End of Body */
+
+/* Start of Footer */
+
+footer {
+margin-top: 100px;
+position:relative;
+bottom: 0;
+height: 100px;
+background-color: #202020;
+text-align: center;
+padding: 0;
+}
+
+#Copyright, .footerButton {
+position: relative;
+top: 25%;
+font-size: 20px;
+color: white;
+margin: 10px;
+display: inline-block;
+padding: 0;
+}
+
+/* End of Footer */
+
+/* Start of Media Queries */
+
+@media all and (max-width: 767px) {      /* all includes all the types */
+
+  .header h1 {
+    font-size: 35px;
+  }
+
+  .HL {
+    margin: 0;
+  }
+
+  .HL li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .NavButton {
+    width: 100%;
+    padding: 10px 0 10px 0;
+  }
+
+  .MainTitle {
+    height: 220px;
+  }
+
+  .Title {
+    font-size: 40px;
+  }
+
+  .MainBody img {
+    width: 100%;
+  }
+
+  .Intro, .Ingredients, .Steps {
+    font-size: 20px;
+  }
+
+  .IngredientsList li {
+    text-align: left;
+  }
+
+  footer #Copyright, .footerButton {
+    font-size: 15px;
+  }
+
+}
+
+/* End of Media Queries */

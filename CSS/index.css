@@ -1,0 +1,356 @@
+*{
+    margin-top: 0;
+    font-family: Garamond, Arial;
+}
+
+body, html {
+  background-color:	#F0F0F0;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 0 0 0;
+}
+
+.header {
+  display: block;
+  background-color:#202020;
+  position: relative;
+  text-align: center;
+  top: 0;
+  color: white;
+  margin-top: 0;
+  width: 100%;
+  padding: 10px 0 10px 0;
+}
+.header h1 {
+  position: relative;
+  top: 10px;
+  font-size: 45px;
+}
+
+.HL {
+  padding: 0;
+}
+
+.HL li {
+  position: relative;
+  text-align: center;
+  top: 5px;
+  display: inline;
+  margin: 20px;
+  color: white;
+  padding:0;
+}
+
+                                      /* End of Header and border: */
+
+.MainTitle {
+  height: 500px;
+  background-size: 100%;
+  background-image: url(ManakeeshF11.jpg);
+  background-repeat:no-repeat;
+  text-align: left;
+  transition: 0.4s;
+  color: white;
+}
+
+.Title {
+  position: relative;
+  font-size: 75px;
+  margin: 30px;
+  text-shadow:2px 0 10px grey;
+  top: 25%;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+
+#TitleQ {
+  position: relative;
+  font-size: 20px;
+  text-shadow:2px 0 10px grey;
+  margin: 0 0 0 70px;
+  top: 20%;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.AboutMe {
+  margin: 30px 0 30px 30px;
+  font-size: 22.5px;
+}
+
+.MainBody {
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  height: 100%;
+  background-color: #202020;
+}
+
+.Manakeesh, .KoreanChicken, .Brownies {
+  float: none;
+  width: 300px;
+  overflow:hidden;
+  display: inline-block;
+  margin: 35px;
+  padding: 20px;
+  box-shadow: 0 0 20px 20px grey;
+  color: white;
+}
+
+.Brownies {
+  padding: 9px 20px 20px 20px;
+}
+
+.MainHeaders {
+  font-size: 28px;
+  margin: 28px 0;
+}
+
+.MainP {
+  font-size: 18.5px;
+  height: 100%;
+  margin: 10px 0;
+  padding: 15px 0;
+  height: 75px;
+}
+
+.Images {
+  position: relative;
+  width: 275px;
+}
+
+                    /* Buttons */
+
+.MainButton {
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  background-color: white;
+  border: none;
+  margin: 10px;
+  width: 80px;
+  height: 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.MainButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.55s;
+}
+
+.MainButton span:after {
+  content:'\00bb';
+  position: relative;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.MainButton:hover span {
+  padding-right: 25px;
+}
+
+.MainButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.NavButton, .footerButton {
+  font-size: 22.5px;
+  padding: 10px 5px 10px 5px;
+  border-radius: 4px;
+  background-color: #202020;
+  border: none;
+  margin-bottom: 4px;
+  color: white;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.NavButton:hover, .footerButton:hover {
+  padding: 9px;
+  background-color: white;
+  color: #202020;
+}
+
+
+
+                    /* End of Buttons */
+
+                              /* End of Body */
+footer {
+  margin-top: 100px;
+  position:relative;
+  bottom: 0;
+  height: 100px;
+  background-color: #202020;
+  text-align: center;
+}
+
+#Copyright, .footerButton {
+  position: relative;
+  top: 25%;
+  font-size: 20px;
+  color: white;
+  margin: 10px;
+  display: inline-block;
+}
+
+                            /* End of Footer */
+
+@media all and (max-width: 425px) {
+
+  .header h1 {
+    width: 100%;
+    display: block;
+    font-size: 35px;
+  }
+
+  .HL {
+    margin: 0;
+  }
+
+  .HL li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .NavButton {
+    width: 100%;
+    padding: 10px 0 10px 0;
+  }
+
+  .MainTitle {
+    margin: 20px 0;
+    padding: 20px;
+    height: 220px;
+    height: 100%;
+  }
+
+  .Title {
+    margin: 0;
+    font-size: 40px;
+  }
+
+  #TitleQ {
+    font-size: 20px;
+  }
+
+  .MainBody img {
+    width: 75%;
+  }
+
+  .Manakeesh, .KoreanChicken, .Brownies {
+    width: 75%;
+    margin: 35px 0 35px 0;
+    padding: 20px 0;
+  }
+
+  .MainBody p {
+    font-size: 15px;
+    margin: 20px;
+  }
+
+  .MainBody button {
+    margin: 20px 0;
+    bottom: 10%;
+  }
+
+  footer {
+  margin-top: 100px;
+  position:relative;
+  bottom: 0;
+  height: 100px;
+  background-color: #202020;
+  text-align: center;
+  padding: 0;
+  }
+
+  #Copyright, .footerButton {
+  position: relative;
+  top: 25%;
+  font-size: 15px;
+  color: white;
+  margin: 10px;
+  display: inline-block;
+  padding: 0;
+  }
+
+}
+
+@media all and (max-width: 760px) and (min-width: 425px) {
+
+  .header h1 {
+    width: 100%;
+    display: block;
+    font-size: 35px;
+  }
+
+  .HL {
+    margin: 0;
+  }
+
+  .HL li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .NavButton {
+    width: 100%;
+    padding: 10px 0 10px 0;
+  }
+
+  .MainTitle {
+    margin: 20px 0;
+    padding: 20px;
+    height: 220px;
+    height: 100%;
+  }
+
+  .Title {
+    font-size: 60px;
+    margin: 0;
+  }
+
+  #TitleQ {
+    font-size: 20px;
+  }
+
+}

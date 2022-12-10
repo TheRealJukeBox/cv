@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">          <!-- Viewport is necessary for responsiveness -->
+    <meta name="keywords" content="Recipes, Manakeesh">                               <!-- Keywords of the html to include in search engines -->
+    <meta name="author" content="Ahmed">
+    <link rel="stylesheet" href="CSS/Recipes.css" type="text/css">
+    <title>Manakeesh</title>
+  </head>
+  <body>
+    <header id="headerID">
+      <div class="header">
+        <h1>Selected Recipes</h1>
+        <nav>
+            <ul class="HL">     <!-- Used this type of onClick to allow the button to go to the desired html page -->
+              <li><button class="NavButton" type="button" onclick="location.href='index.html'" name="HomeButton">Home</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='Brownies.html'" name="BrowniesButton">Brownies</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='KoreanChicken.html'" name="KoreanChickenButton">Korean Chicken</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='Manakeesh.html'" name="ManakeeshButton">Manakeesh</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='Feedback.html'" name="Feedback">Feedback</button></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End of header -->
+
+    <!-- Beginnig of Body -->
+    <div class="MainTitle" style="background-image:url(ManakeeshF1.jpg);">
+      <h1 class="Title">Manakeesh</h1>
+    </div>
+    <div class="Intro">
+      <h1>Introduction</h1>
+      <p>
+        Manakeesh is a Lebanese dish that consist mainly of cheese and Za'atar, and is one of my favourite side-dishes.
+        The following recipe is the way how I personally like, feel free to modify it in any way. And if you do so, click on the feedback button and share with me your <em>newly modified</em> recipe.
+      </p>
+    </div>
+    <div class="Ingredients">
+      <h2>Ingredients</h2>
+      <ul class="IngredientsList">
+        <li>4 Lebanese flatbread</li>
+        <li>1 1/2 cup of shredded Mozzarella cheese</li>
+        <li>4 <abbr title="tablespoon">tbsp</abbr> of fresh za'atar</li>
+        <li>4 <abbr title="teaspoon">tsp</abbr> of olive oil</li>
+      </ul>
+    </div>
+    <div class="Steps">
+      <h2>Steps:</h2>
+      <ol>
+        <li>Pre-heat the oven for 10 minutes at 200&#176;</li>
+        <li>Place 2 flat breads on a baking tray. Make sure to place the baking sheet.</li>
+        <li>Add half of the Mozzarella cheese on both breads and top them with half of the za'atar.</li>
+        <li>Sprinkle 2 <abbr title="teaspoon">tsp</abbr> of olive oil on both breads.</li>
+        <li>Repeat steps 1-3 and add the flatbreads on top of each other.</li>
+        <li>Place the flatbreads into the oven at 200&#176; for about 10 miuntes or until the flatbreads look ready.</li>
+      </ol>
+    </div>
+    <div class="MainBody">
+      <div class="ShowStep1">
+        <div class="Step2">
+          <figure>
+            <img src="Images/Manakeesh1.1.jpg" alt="Step 2: Assembling Flatbreads">
+            <figcaption>Step 2</figcaption>
+          </figure>
+        </div>
+        <div class="Step3">
+          <figure>
+            <img src="Images/Manakeesh2.1.jpg" alt="Step 3: Adding Mozzarella and Za'atar">
+            <figcaption>Step 3</figcaption>
+          </figure>
+        </div>
+        <div class="Step4">
+          <figure>
+            <img src="Images/Manakeesh3.1.jpg" alt="Step 4: Adding Olive Oil">
+            <figcaption>Step 4</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="ShowStep2">
+        <div class="Step5">
+          <figure>
+            <img src="Images/Manakeesh4.1.jpg" alt="Step 5: Repeating Steps 1-3">
+            <figcaption>Step 5</figcaption>
+          </figure>
+        </div>
+        <div class="Step6">
+          <figure>
+            <img src="Images/Manakeesh5.1.jpg" alt="Step 6: Flatbreads after 10 miuntes in the oven at 200&#176;">
+            <figcaption>Step 6</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!-- End of Body -->
+
+    <!-- Beginnig of Footer -->
+    <footer>
+      <h6 id="Copyright">Copyright<sup>&#169;</sup> 2022. All rights reserved</h6>         <!-- The value between the supscript is for the c symbol of copyright -->
+      <button class ="footerButton" type="button" name="BackToTop" onclick="location.href='#headerID'">^</button>      <!-- Used this type of onClick to allow the button to go to the header -->
+    </footer>
+    <!-- End of Footer -->
+  </body>
+</html>

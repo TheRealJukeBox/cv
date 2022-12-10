@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">          <!-- Viewport is necessary for responsiveness -->
+    <meta name="keywords" content="Recipes, Brownies, Manakeesh, Korean Chicken">    <!-- Keywords of the html to include in search engines -->
+    <meta name="author" content="Ahmed">
+    <link rel="stylesheet" href="CSS/index.css" type="text/css" >
+    <title>Favourite Recipes</title>
+  </head>
+  <body>
+    <!-- Beginnig of header -->
+    <header id="headerID">
+      <div class="header">
+        <h1>Selected Recipes</h1>
+        <nav>
+            <ul class="HL">  <!-- Used this type of onClick to allow the button to go to the desired html page -->
+              <li><button class="NavButton" type="button" onclick="location.href='index.html'" name="HomeButton">Home</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='Brownies.html'" name="BrowniesButton">Brownies</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='KoreanChicken.html'" name="KoreanChickenButton">Korean Chicken</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='Manakeesh.html'" name="ManakeeshButton">Manakeesh</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='Feedback.html'" name="Feedback">Feedback</button></li>
+            </ul>
+       </nav>
+      </div>
+    </header>
+    <!-- End of header -->
+
+    <!-- Beginnig of Body -->
+    <div class="MainTitle">
+      <h1 class="Title">Selected <br>Food <br>Recipes</h1>
+      <h1 id="TitleQ">- Ahmed Almusalam</h1>
+    </div>
+    <div class="AboutMe">
+      <h2>About Me</h2>
+      <p class="TitleText">Hello, there! I am Ahmed, a student currently studying Cybersecurity at the British University of Bahrain.
+         Even though its quite far from my major, but one of my favourite things to do is cooking.
+         I like to discover new dishes, try different cooking techniques and taste exotic flavours.
+         I have created this website to share some of my favourite foods and how to make them.
+          With that being said, tell me what you think of my recipes and if you have any suggestion, click on the feedback button where you can send it to me.</p>
+    </div>
+    <div class="MainBody">
+            <div class="Manakeesh">
+              <h3 class="MainHeaders">Manakeesh</h3>
+              <img class="Images" src="Images/ManakeeshF1.jpg" alt="Picture of Manakeesh">
+              <p class="MainP">Manakeesh is a Lebanese dish that consist mainly of cheese and Za'atar, and is one of my favourite side-dishes. Click on the button to find out more!</p>
+              <button class="MainButton" type="button" onclick="location.href='Manakeesh.html'" name="ManakeeshButton"><span>More</span></button>          <!-- The use of span in the buttons is to style the text only not the entire button -->
+            </div>
+            <div class="KoreanChicken">
+              <h3 class="MainHeaders">Korean Chicken Bites</h3>
+              <img class="Images" src="Images/KoreanChicken6.jpg" alt="Picture of Korean Chicken">
+              <p class="MainP">Korean Chicken Bites is a dish I would usually go to for lunch or dinner, it is easy to make and flavourful. Find out more by clicking the button.</p>
+              <button class="MainButton" type="button" onclick="location.href='KoreanChicken.html'" name="KoreanChickenButton"><span>More</span></button>          <!-- The use of span in the buttons is to style the text only not the entire button -->
+            </div>
+            <div class="Brownies">
+              <h3 class="MainHeaders">Brownies</h3>
+              <img class="Images" src="Images/BrowniesF211.jpg" alt="Picture of Brownies">
+              <p class="MainP">Brownies are one of my favourite dishes, they are very easy to make, and are very delicious. Click on the button to find out more!</p>
+              <button class="MainButton" type="button" onclick="location.href='Brownies.html'" name="BrowniesButton"><span>More</span></button>        <!-- The use of span in the buttons is to style the text only not the entire button -->
+            </div>
+    </div>
+    <!-- End of Body -->
+
+    <!-- Beginnig of Footer -->
+    <footer>
+      <h6 id="Copyright">Copyright<sup>&#169;</sup> 2022. All rights reserved</h6>      <!-- The value between the supscript is for the c symbol of copyright -->
+      <button class ="footerButton" type="button" name="BackToTop" onclick="location.href='#headerID'">^</button>      <!-- Used this type of onClick to allow the button to go to the header -->
+    </footer>
+    <!-- End of Footer -->
+  </body>
+</html>
