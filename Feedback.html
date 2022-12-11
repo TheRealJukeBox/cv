@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" >
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">            <!-- Viewport is necessary for responsiveness -->
+    <meta name="author" content="Ahmed">
+    <link rel="stylesheet" href="CSS/Feedback.css">
+    <title>Feedback</title>
+  </head>
+  <body>
+    <!-- Beginnig of header -->
+    <header id="headerID">
+      <div class="header">
+        <h1 class="H1">Selected Recipes</h1>
+        <nav>
+            <ul class="HL">      <!-- Used this type of onClick to allow the button to go to the desired html page -->
+              <li><button class="NavButton" type="button" onclick="location.href='index.html'" name="HomeButton">Home</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='Brownies.html'" name="BrowniesButton">Brownies</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='KoreanChicken.html'" name="KoreanChickenButton">Korean Chicken</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='Manakeesh.html'" name="ManakeeshButton">Manakeesh</button></li>
+              <li><button class="NavButton" type="button" onclick="location.href='Feedback.html'" name="Feedback">Feedback</button></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End of header -->
+
+    <!-- Beginnig of Body -->
+    <div class="FormPage">
+      <div class="Introduction">
+        <h1>Submit your feedback here!</h1>
+        <p>
+          Below is a form, where you can give us any feedbacks regarding the website's design or content.
+          We will use this information to further enhance our website.
+        </p>
+      </div>
+      <div class="FormBody">
+        <form class="Form" action="Feedback.html" method="get">
+          <h2>Please fill out the following form</h2>
+        <h4>Please enter your valid contact information</h4>
+          <fieldset>         <!-- Fieldset is to group the input elemnts -->
+            <legend>Contact Details</legend>
+            <table>
+              <tr>
+                <td>First Name: </td>
+                <td><input type="text" name="fName" required="required"></td>
+              </tr>
+              <tr>
+                <td>Last Name: </td>
+                <td><input type="text" name="lName" required="required"></td>
+              </tr>
+              <tr>
+                <td>Email: </td>
+                <td><input type="email" name="email" required="required"></td>
+              </tr>
+            </table>
+          </fieldset>
+        <div class="QHeaders1">
+          <h3>What do you think of this website's design?</h3>  <!-- label used to make the hitbox of the radio bigger (also the text) -->
+            <input type="radio" id="VeryPoor" name="design" value="Very Poor">
+            <label for="VeryPoor">Very Poor</label>
+            <input type="radio" id="Poor" name="design" value="Poor">
+            <label for="Poor">Poor</label>
+            <input type="radio" id="Moderate" name="design" value="Moderate">
+            <label for="Moderate">Moderate</label>
+            <input type="radio" id="Good" name="design" value="Good">
+            <label for="Good">Good</label>
+            <input type="radio" id="VeryGood" name="design" value="Very Good">
+            <label for="VeryGood">Very Good</label>
+        </div>
+        <div class="QHeaders">
+          <h3>What do you think of this website's content?</h3>
+            <input type="radio" id="NA" name="content" value="Dislike">
+            <label for="NA">Not Interesting At All</label> <br>
+            <input type="radio" id="NI" name="content" value="Dislike">
+            <label for="NI"> Not <em>that</em> interesting </label><br>
+            <input type="radio" id="QI" name="content" value="Like">
+            <label for="QI">Quite interesting</label> <br>
+            <input type="radio" id="RI" name="content" value="Like">
+            <label for="RI">Really interesting</label><br>
+        </div>
+        <div>
+          <h3>Please suggest any improvements for this website.</h3>  <!-- Rows and cols determine the size of the textarea -->
+          <textarea rows="8" cols="40" placeholder="Enter your suggestions..."></textarea>     <!-- placeholder is the text that appears before clicking on the textarea -->
+        </div> <br>
+          <input id="Submit" type="submit" name="submitForm" value="Submit">
+        </form>
+      </div>
+    </div>
+    <!-- End of Body -->
+
+    <!-- Beginnig of Footer -->
+    <footer>
+      <h6 id="Copyright">Copyright<sup>&#169;</sup> 2022. All rights reserved</h6>  <!-- The value between the supscript is for the c symbol of copyright -->
+      <button class ="footerButton" type="button" name="BackToTop" onclick="location.href='#headerID'">^</button>       <!-- Used this type of onClick to allow the button to go to the header -->
+    </footer>
+    <!-- End of Footer -->
+  </body>
+</html>
